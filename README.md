@@ -1,7 +1,7 @@
 # getir-bi-mutluluk
 ##Getir Case Study
 
-- This is a RESTful API with a single endpoint that fetches the data in the provided MongoDB collection and return the result in the requested format.
+This is a RESTful API with a single endpoint that fetches the data in the provided MongoDB collection and return the result in the requested format.
 
 ## Case Details
 - **Node.js**:
@@ -15,9 +15,11 @@
 
 
 ## Request Payload
-- The request payload includes a JSON with 4 fields.
-- **“startDate” and “endDate”** fields contains the date in a “YYYY-MM-DD” format.
-- **“minCount” and “maxCount”** are for filtering the data.
+The request payload includes a JSON with 4 fields.
+
+**“startDate” and “endDate”** fields contains the date in a “YYYY-MM-DD” format.
+
+**“minCount” and “maxCount”** are for filtering the data.
 ```
 Sample:
 {
@@ -28,10 +30,13 @@ Sample:
 }
 ```
 ## Response Payload
-- Response payload have 3 main fields.
-- **“code”** is for status of the request. 0 means success.
-- **“msg”** is for description of the code.
-- **“records”** includes all the filtered items according to the request. This array includes items of “key”, “createdAt” and “totalCount” fields.
+Response payload have 3 main fields.
+
+**“code”** is for status of the request. 0 means success.
+
+**“msg”** is for description of the code.
+
+**“records”** includes all the filtered items according to the request. This array includes items of “key”, “createdAt” and “totalCount” fields.
 
 ```
 Sample:
@@ -54,7 +59,8 @@ Sample:
 ```
 
 ## Installation
-- **Clone:** git clone https://github.com/oguzhankemal/getir-bi-mutluluk.git
+- **Clone:** 
+``` git clone https://github.com/oguzhankemal/getir-bi-mutluluk.git ```
 - **Environment:** Set the environment values
 - **Install Required Packages:** npm install
 - **Run Locally:** npm start
