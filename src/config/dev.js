@@ -1,3 +1,4 @@
+//Config for developlment
 const config = {
     db: {
         host: process.env.DB_HOST,

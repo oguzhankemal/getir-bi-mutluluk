@@ -1,3 +1,5 @@
+//Config for production
+
 const config = {
     db: {
         host: process.env.DB_HOST,

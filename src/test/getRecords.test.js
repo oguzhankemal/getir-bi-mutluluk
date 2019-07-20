@@ -13,7 +13,6 @@ test('Test Post Request To Get Filtered ', async () => {
         .send(filter)
         .expect(200)
         .catch(err => {
-            // write test for failure here
             console.log(`Error ${err}`)
             done()
         });
