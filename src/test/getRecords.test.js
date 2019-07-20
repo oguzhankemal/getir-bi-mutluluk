@@ -9,7 +9,7 @@ test('Test Post Request To Get Filtered ', async () => {
         "maxCount": 3000
     };
     await request(app)
-        .post('/')
+        .post('/getRecords')
         .send(filter)
         .expect(200)
         .catch(err => {

@@ -4,6 +4,6 @@ var router = express.Router();
 var recordController = require('../controllers/recordController');
 
 // POST request for record list
-router.post('/',validator.validateGetRecords(), recordController.recordList);
+router.post('/getRecords',validator.validateGetRecords(), recordController.recordList);
 
 module.exports = router;
