@@ -1,7 +1,7 @@
 # getir-bi-mutluluk
 ## Getir Case Study
 
-This is a RESTful API with a single endpoint that fetches the data in the provided MongoDB collection and return the result in the requested format.
+This is a RESTful API with a single HTTP POST endpoint that fetches the data in the provided MongoDB collection and return the result in the requested format.
 
 ## Case Details
 - **Node.js**:
@@ -68,3 +68,8 @@ Sample:
 
 ## Heroku
 - You can access the api directly by using [Heroku Demo Link](https://getir-bi-mutluluk.herokuapp.com/api/getRecords/)
+```
+https://getir-bi-mutluluk.herokuapp.com/api/getRecords/
+
+```
+- !Important: This API only accepts POST Request
