@@ -1,12 +1,12 @@
 # getir-bi-mutluluk
-Getir Case Study
+##Getir Case Study
 
-This is a RESTful API with a single endpoint that fetches the data in the provided MongoDB collection and return the result in the requested format.
+- This is a RESTful API with a single endpoint that fetches the data in the provided MongoDB collection and return the result in the requested format.
 
 ## Case Details
 - **Node.js**:
   - **[Node.js](https://nodejs.org/en/)**: 12.6.0 
-- **Training**:
+- **Web Framework**:
   - **[express](https://www.npmjs.com/package/express)**: Fast, unopinionated, minimalist web framework for node.
 - **Heroku**:
   - **[Heroku](https://www.heroku.com/)**: Cloud Application Platform performance.
@@ -15,9 +15,9 @@ This is a RESTful API with a single endpoint that fetches the data in the provid
 
 
 ## Request Payload
-The request payload will include a JSON with 4 fields.
-**“startDate” and “endDate”** fields will contain the date in a “YYYY-MM-DD” format. You should filter the data using “createdAt”
-**“minCount” and “maxCount”** are for filtering the data. Sum of the “count” array in the documents should be between “minCount and “maxCount”.
+- The request payload includes a JSON with 4 fields.
+- **“startDate” and “endDate”** fields contains the date in a “YYYY-MM-DD” format.
+- **“minCount” and “maxCount”** are for filtering the data.
 ```
 Sample:
 {
@@ -28,10 +28,10 @@ Sample:
 }
 ```
 ## Response Payload
-Response payload should have 3 main fields.
-**“code”** is for status of the request. 0 means success. Other values may be used for errors that you define.
-**“msg”** is for description of the code. You can set it to “success” for successful requests. For unsuccessful requests, you should use explanatory messages.
-**“records”** will include all the filtered items according to the request. This array should include items of “key”, “createdAt” and “totalCount” which is the sum of the “counts” array in the document.
+- Response payload have 3 main fields.
+- **“code”** is for status of the request. 0 means success.
+- **“msg”** is for description of the code.
+- **“records”** includes all the filtered items according to the request. This array includes items of “key”, “createdAt” and “totalCount” fields.
 
 ```
 Sample:
@@ -54,12 +54,11 @@ Sample:
 ```
 
 ## Installation
-**Clone:** git clone https://github.com/oguzhankemal/getir-bi-mutluluk.git
-**Environment:** Set the environment values
-**Install Required Packages:** npm install
-**Run Locally:** npm start
-**Testing:** npm test
+- **Clone:** git clone https://github.com/oguzhankemal/getir-bi-mutluluk.git
+- **Environment:** Set the environment values
+- **Install Required Packages:** npm install
+- **Run Locally:** npm start
+- **Testing:** npm test
 
 ## Heroku
-You can access the api directly by using the below heroku link
-https://getir-bi-mutluluk.herokuapp.com/api/getRecords
+- You can access the api directly by using [Heroku Demo Link](https://getir-bi-mutluluk.herokuapp.com/api/getRecords/)
