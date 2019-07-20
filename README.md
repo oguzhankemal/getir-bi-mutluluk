@@ -1,5 +1,5 @@
 # getir-bi-mutluluk
-##Getir Case Study
+## Getir Case Study
 
 This is a RESTful API with a single endpoint that fetches the data in the provided MongoDB collection and return the result in the requested format.
 
